@@ -1,0 +1,378 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="{% static '/css/main.css' %}" />
+    <link rel="stylesheet" href="{% static '/css/filter.css' %}" />
+    <link rel="stylesheet" href="{% static '/css/button.css' %}" />
+
+    <title>College Guide</title>
+  </head>
+  <!-- filter-->
+  <body>
+    {% include 'college_app/navbar.html' %}
+    {% include 'college_app/image_slider.html' %}
+
+    <div class="m-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="card" style="width: 18rem">
+              <div class="card-header">Filter</div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <a
+                    class="badge bg-primary text-decoration-none link-light"
+                    href="{% url 'main' %}"
+                    >All</a
+                  >
+                </li>
+                <!-- <li class="list-group-item">
+                  <a
+                    class="badge bg-primary text-decoration-none link-light"
+                    href="#!"
+                    >NIRF Ranking</a
+                  >
+                </li> -->
+                <li class="list-group-item">
+                  <a
+                    class="badge bg-primary text-decoration-none link-light"
+                    href="#!"
+                    >Fees</a
+                  >
+                </li>
+                <li class="list-group-item">
+                  <div class="dropdown">
+                    <button
+                      class="
+                        dropbtn
+                        badge
+                        bg-primary
+                        text-decoration-none
+                        link-light
+                      "
+                    >
+                      Stream
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="{% url 'main' %}">Engineering</a>
+                      <a href="#">Medical</a>
+                      <a href="#">Commerce</a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- colleges 1-->
+          <div class="col-md-9">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card my-2">
+                      <img
+                        class="image-thumbnail"
+                        src="{% static '/images/IIT-Delhi.jpeg' %}"
+                        alt="Card image cap"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title"> <b>IIT-Delhi</b> </h5>
+                        <p class="card-text">Indian Institute of Technology Delhi (abbreviated IIT Delhi or IITD) is a public technical university located in South Delhi, India.</p>
+                      </div>
+                      <a href="{% url 'iit-delhi'  %}" class="mx-auto m-3"
+                        ><button class="custom-btn btn-3">
+                          <span>Read More</span>
+                        </button></a
+                      >
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card my-2">
+                      <img
+                        class="image-thumbnail"
+                        src="{% static '/images/kanpur.jpg' %}"
+                        alt="Card image cap"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title"><b>IIT-Kanpur</b></h5>
+                        <p class="card-text">Indian Institute of Technology Kanpur (IIT Kanpur) is a public technical university located in Kanpur, Uttar Pradesh, India.</p>
+                      </div>
+                      <a href="{% url 'iit-kanpur'  %}" class="mx-auto m-3"
+                        ><button class="custom-btn btn-3">
+                          <span>Read More</span>
+                        </button></a
+                      >
+                    </div>
+                  </div>
+
+                  <div class="col-md-4">
+                    <div class="card my-2">
+                      <img
+                        class="image-thumbnail"
+                        src="{% static '/images/iit_roorkee_image.jpg' %}"
+                        alt="Card image cap"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title"><b>IIT-Roorkee</b></h5>
+                        <p class="card-text">Indian Institute of Technology Roorkee (abbreviated IIT Roorkee or IITR) is a public technical university located in Roorkee, India.</p>
+                      </div>
+                      <a href="{% url 'iit-roorkee'  %}" class="mx-auto m-3"
+                        ><button class="custom-btn btn-3">
+                          <span>Read More</span>
+                        </button></a
+                      >
+                    </div>
+                  </div>
+
+                  <div class="col-md-4">
+                    <div class="card my-2">
+                      <img
+                        class="image-thumbnail"
+                        src="{% static '/images/iit_guwahati_image.jpg' %}"
+                        alt="Card image cap"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title"><b>IIT-Guwahati</b></h5>
+                        <p class="card-text">Indian Institute of Technology Guwahati (abbreviated IIT Guwahati or IITG) is a public technical university located in Guwahati, India.</p>
+                      </div>
+                      <a href="{% url 'iit-guwahati'  %}" class="mx-auto m-3"
+                        ><button class="custom-btn btn-3">
+                          <span>Read More</span>
+                        </button></a
+                      >
+                    </div>
+                  </div>
+
+                  <div class="col-md-4">
+                    <div class="card my-2">
+                      <img
+                        class="image-thumbnail"
+                        src="{% static '/images/IIT-Dhanbad.jpeg' %}"
+                        alt="Card image cap"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title"> <b>IIT-Dhanbad</b> </h5>
+                        <p class="card-text">Indian Institute of Technology Dhanbad (abbreviated IIT Dhanbad or IIT (ISM)) is a public technical university located in Dhanbad, India.</p>
+                      </div>
+                      <a href="{% url 'iit-dhanbad' %}" class="mx-auto m-3"
+                        ><button class="custom-btn btn-3">
+                          <span>Read More</span>
+                        </button></a
+                      >
+                    </div>
+                  </div>
+
+                  <div class="col-md-4">
+                    <div class="card my-2">
+                      <img
+                        class="image-thumbnail"
+                        src="{% static '/images/vitvellore.jpg' %}"
+                        alt="Card image cap"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title"><b>VIT-Vellore</b></h5>
+                        <p class="card-text">Vellore Institute of Technology Vellore (abbreviated VIT Vellore or VIT-V) is a private technical university located in Vellore, India.</p>
+                      </div>
+                      <a href="{% url 'vitvellore'  %}" class="mx-auto m-3"
+                        ><button class="custom-btn btn-3">
+                          <span>Read More</span>
+                        </button></a
+                      >
+                    </div>
+                  </div>
+                  
+                  <div class="col-md-4">
+                    <div class="card my-2">
+                      <img
+                        class="image-thumbnail"
+                        src="{% static '/images/VIT-Chennai.jpeg' %}"
+                        alt="Card image cap"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title"> <b>VIT-Chennai</b> </h5>
+                        <p class="card-text">Vellore Institute of Technology Chennai (abbreviated VIT Chennai or VITC) is a private technical university located in Chennai , India.</p>
+                      </div>
+                      <a href="{% url 'vitchennai' %}" class="mx-auto m-3"
+                        ><button class="custom-btn btn-3">
+                          <span>Read More</span>
+                        </button></a
+                      >
+                    </div>
+                  </div>
+
+                  <div class="col-md-4">
+                    <div class="card my-2">
+                      <img
+                        class="image-thumbnail"
+                        src="{% static '/images/vitbhopal.jpg' %}"
+                        alt="Card image cap"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title"><b>VIT-Bhopal</b></h5>
+                        <p class="card-text">Vellore Institute of Technology Bhopal (abbreviated VIT Bhopal or VIT-B) is a private technical university located in Bhopal,Madhya Pradesh, India.</p>
+                      </div>
+                      <a href="{% url 'vitbhopal'  %}" class="mx-auto m-3"
+                        ><button class="custom-btn btn-3">
+                          <span>Read More</span>
+                        </button></a
+                      >
+                    </div>
+                  </div>
+    
+                  
+    
+                  
+
+                  <div class="col-md-4">
+                    <div class="card my-2">
+                      <img
+                        class="image-thumbnail"
+                        src="{% static '/images/patna.jpg' %}"
+                        alt="Card image cap"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title"><b>IIT-Patna</b></h5>
+                        <p class="card-text">Indian Institute of Technology Patna (abbreviated IIT Patna or IITP) is a public technical university located in Patna, India.</p>
+                      </div>
+                      <a href="{% url 'iit-patna'  %}" class="mx-auto m-3"
+                        ><button class="custom-btn btn-3">
+                          <span>Read More</span>
+                        </button></a
+                      >
+                    </div>
+                  </div>
+
+              <div class="col-md-4">
+                <div class="card my-2">
+                  <img
+                    class="image-thumbnail"
+                    src="{% static '/images/iitjodhpur.png' %}"
+                    alt="Card image cap"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title"><b>IIT-Jodhpur</b> </h5>
+                    <p class="card-text">Indian Institute of Technology Jodhpur (abbreviated IIT Jodhpur or IITJ) is a public technical university located in Jheepasani, India.</p>
+                  </div>
+                  <a href="{% url 'iit-jodhpur'  %}" class="mx-auto m-3"
+                    ><button class="custom-btn btn-3">
+                      <span>Read More</span>
+                    </button></a
+                  >
+                </div>
+              </div>
+              
+              <div class="col-md-4">
+                <div class="card my-2">
+                  <img
+                    class="image-thumbnail"
+                    src="{% static '/images/gandhinagar.jpg' %}"
+                    alt="Card image cap"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title"> <b>IIT-Gandhinagar</b> </h5>
+                    <p class="card-text">Indian Institute of Technology Gandhinagar (also known as IITGN) is a public technical university located in Gandhinagar, Gujarat, India.</p>
+                  </div>
+                  <a href="{% url 'iit-gandhinagar'  %}" class="mx-auto m-3"
+                    ><button class="custom-btn btn-3">
+                      <span>Read More</span>
+                    </button></a
+                  >
+                </div>
+              </div>
+
+              <!-- colleges 2-->
+              <div class="col-md-4">
+                <div class="card my-2">
+                  <img
+                    class="image-thumbnail"
+                    src="{% static '/images/IIT-Goa.png' %}"
+                    alt="Card image cap"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title"> <b>IIT-Goa</b> </h5>
+                    <p class="card-text">Indian Institute of Technology Goa (abbreviated IIT Goa or IITGOA) is a public technical university located in Farmagudi, North Goa, India.</p>
+                  </div>
+                  <a href="{% url 'iit-goa' %}" class="mx-auto m-3"
+                    ><button class="custom-btn btn-3">
+                      <span>Read More</span>
+                    </button></a
+                  >
+                </div>
+              </div>
+
+              <!-- colleges 3-->
+
+              
+              
+            <div class="col-md-4">
+                  <div class="card my-2">
+                    <img
+                      class="image-thumbnail"
+                      src="{% static '/images/vitamaravati.jpeg' %}"
+                      alt="Card image cap"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title"><b>VIT-Amaravati</b></h5>
+                      <p class="card-text">Vellore Institute of Technology Amaravati (VIT Amaravati or VIT-AP) is a private technical university located in Amaravati,Andhra Pradesh,India</p>
+                    </div>
+                    <a href="{% url 'vitamaravati'  %}" class="mx-auto m-3"
+                      ><button class="custom-btn btn-3">
+                        <span>Read More</span>
+                      </button></a
+                    >
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="py-3 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; CollegeGuide 2021</p>
+      </div>
+    </footer>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

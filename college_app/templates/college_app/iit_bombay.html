@@ -1,0 +1,426 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="{% static '/css/college.css' %}" />
+    <!-- <style>
+      .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+      }
+
+      .icon.jsx-626553351 {
+        width: 20px;
+        height: 20px;
+      }
+
+      .mr-4 {
+        margin-right: 1rem;
+      }
+
+      .icon {
+        display: inline-block;
+        line-height: initial;
+        height: 15px;
+        width: 15px;
+      }
+    </style> -->
+    <title>IIT Bombay</title>
+  </head>
+  <body>
+    {% include 'college_app/navbar.html' %}
+
+    <!-- Page content-->
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-lg-8">
+          <!-- Post content-->
+          <article>
+            <!-- Post header-->
+            <header class="mb-4">
+              <!-- Post title-->
+              <h1 class="fw-bolder mb-1">
+                Indian Institute of Technology - Bombay
+              </h1>
+              <!-- Post meta content-->
+              <a style="width: 30px; height: 30px" class="icon" href="#!">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72">
+                  <path
+                    fill="#d22f27"
+                    d="m 52.5733 29.11 c 0 -9.3149 -7.1338 -16.8923 -15.9034 -16.8923 s -15.9034 7.5773 -15.9034 16.8963 c 0.0027 0.4653 0.2238 11.6088 12.9612 31.2452 a 3.4626 3.4626 0 0 0 2.8174 1.9343 c 1.8394 0 3.0941 -2.0266 3.2162 -2.2327 c 12.8187 -19.6473 12.8187 -30.5074 12.812 -30.9508 Z m -15.9033 6.8035 a 7.0826 7.0826 0 1 1 7.0826 -7.0826 a 7.0907 7.0907 0 0 1 -7.0826 7.0826 Z"
+                  />
+                  <path
+                    fill="#ea5a47"
+                    d="m 52.5733 29.11 c 0 -9.3149 -7.1338 -16.8923 -15.9034 -16.8923 a 14.96 14.96 0 0 0 -3.8645 0.5254 c 8.3948 0.4493 15.0989 7.8225 15.0989 16.849 c 0.0068 0.4436 0.0068 11.3036 -12.812 30.9509 a 5.8543 5.8543 0 0 1 -0.5865 0.7972 a 2.8549 2.8549 0 0 0 2.0393 0.9534 c 1.8394 0 3.0941 -2.0266 3.2162 -2.2327 c 12.8187 -19.6474 12.8187 -30.5075 12.812 -30.9509 Z"
+                  />
+                  <g
+                    fill="none"
+                    stroke="#000"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="m 36.5451 62.2935 a 3.4628 3.4628 0 0 1 -2.8174 -1.9343 c -12.7377 -19.6364 -12.9585 -30.7799 -12.9612 -31.2452 c 0 -9.3191 7.1337 -16.8964 15.9034 -16.8964 s 15.9034 7.5773 15.9034 16.8924 c 0.0068 0.4436 0.0068 11.3036 -12.812 30.9509 c -0.1221 0.206 -1.3768 2.2326 -3.2162 2.2326 Z"
+                    />
+                    <path
+                      d="m 36.67 35.9135 a 7.0826 7.0826 0 1 1 7.0827 -7.0826 a 7.0906 7.0906 0 0 1 -7.0827 7.0826 Z"
+                    />
+                  </g>
+                </svg>
+              </a>
+              <!-- Post meta content-->
+              <a class="badge bg-secondary text-decoration-none link-light" href="#!">
+                <div>
+                University in Jheepasani, India
+                </div>
+              </a>
+            </header>
+            <!-- Preview image figure-->
+            <figure class="mb-4">
+              <img
+                class="img-fluid rounded"
+                src="{% static '/images/IIT-Bombay.png' %}"
+                alt="..."
+              />
+            </figure>
+            <!-- Post content-->
+            <section class="mb-5">
+              <p class="fs-5 mb-4">
+                Science is an enterprise that should be cherished as an activity
+                of the free human mind. Because it transforms who we are, how we
+                live, and it gives us an understanding of our place in the
+                universe.
+              </p>
+              <p class="fs-5 mb-4">
+                The universe is large and old, and the ingredients for life as
+                we know it are everywhere, so there's no reason to think that
+                Earth would be unique in that regard. Whether of not the life
+                became intelligent is a different question, and we'll see if we
+                find that.
+              </p>
+              <p class="fs-5 mb-4">
+                If you get asteroids about a kilometer in size, those are large
+                enough and carry enough energy into our system to disrupt
+                transportation, communication, the food chains, and that can be
+                a really bad day on Earth.
+              </p>
+              <h2 class="fw-bolder mb-4 mt-5">Placements</h2>
+              <p class="fs-5 mb-4">
+                For me, the most fascinating interface is Twitter. I have odd
+                cosmic thoughts every day and I realized I could hold them to
+                myself or share them with people who might be interested.
+              </p>
+              <p class="fs-5 mb-4">
+                Venus has a runaway greenhouse effect. I kind of want to know
+                what happened there because we're twirling knobs here on Earth
+                without knowing the consequences of it. Mars once had running
+                water. It's bone dry today. Something bad happened there as
+                well.
+              </p>
+              <h2 class="fw-bolder mb-4 mt-5">Fee Structure</h2>
+              <p class="fs-5 mb-4">
+                For me, the most fascinating interface is Twitter. I have odd
+                cosmic thoughts every day and I realized I could hold them to
+                myself or share them with people who might be interested.
+              </p>
+              <p class="fs-5 mb-4">
+                Venus has a runaway greenhouse effect. I kind of want to know
+                what happened there because we're twirling knobs here on Earth
+                without knowing the consequences of it. Mars once had running
+                water. It's bone dry today. Something bad happened there as
+                well.
+              </p>
+              <figure class="mb-4">
+                <img
+                  class="img-fluid rounded"
+                  src="{% static '/images/iit-b placements.png' %}"
+                  alt="..."
+                />
+              </figure>
+              <div class="embed-responsive embed-responsive-4by3">
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/CG__N4SS1Fc"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </section>
+          </article>
+          <!-- Comments section-->
+          <section class="mb-5"></section>
+        </div>
+        <!-- Side widgets-->
+        <div class="col-lg-4">
+          <!-- Search widget-->
+          <!-- <div class="card mb-4">
+            <div class="card-header">Search</div>
+            <div class="card-body">
+              <div class="input-group">
+                <input
+                  class="form-control"
+                  type="text"
+                  placeholder="Enter search term..."
+                  aria-label="Enter search term..."
+                  aria-describedby="button-search"
+                />
+                <button
+                  class="btn btn-primary"
+                  id="button-search"
+                  type="button"
+                >
+                  Go!
+                </button>
+              </div>
+            </div>
+          </div> -->
+          <!-- Categories widget-->
+          <div class="card mb-4">
+            <div class="card-header">Categories</div>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-sm-6">
+                  <ul class="list-unstyled mb-0">
+                    <li>
+                      <a
+                        class="
+                          badge
+                          bg-secondary
+                          text-decoration-none
+                          link-light
+                        "
+                        href="#!"
+                        >B-tech</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="
+                          badge
+                          bg-secondary
+                          text-decoration-none
+                          link-light
+                        "
+                        href="#!"
+                        >Engineering</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-sm-6">
+                  <ul class="list-unstyled mb-0">
+                    <li>
+                      <a
+                        class="
+                          badge
+                          bg-secondary
+                          text-decoration-none
+                          link-light
+                        "
+                        href="#!"
+                        >IIT</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="
+                          badge
+                          bg-secondary
+                          text-decoration-none
+                          link-light
+                        "
+                        href="#!"
+                        >M-tech</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Side widget-->
+          <!-- <div class="card mb-4">
+            <div class="card-header">Side Widget</div>
+            <div class="card-body">
+              You can put anything you want inside of these side widgets. They
+              are easy to use, and feature the Bootstrap 5 card component!
+            </div>
+          </div> -->
+          <div class="card mb-4">
+            <!-- <div class="card-header">Placements</div>
+            <div class="card-body">
+              You can put anything you want inside of these side widgets. They
+              are easy to use, and feature the Bootstrap 5 card component!
+            </div> -->
+            <div class="card">
+              <div class="card-header">
+                <span class="jsx-626553351 icon mr-4"
+                  ><svg
+                    viewBox="0 -31 512 512"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M497.094 60.004c-.031 0-.063-.004-.094-.004H361V45c0-24.813-20.188-45-45-45H196c-24.813 0-45 20.188-45 45v15H15C6.648 60 0 66.844 0 75v330c0 24.813 20.188 45 45 45h422c24.813 0 45-20.188 45-45V75.316v-.058c-.574-9.852-6.633-15.2-14.906-15.254zM181 45c0-8.27 6.73-15 15-15h120c8.27 0 15 6.73 15 15v15H181zm295.188 45l-46.583 139.742A14.975 14.975 0 01415.38 240H331v-15c0-8.285-6.715-15-15-15H196c-8.285 0-15 6.715-15 15v15H96.621a14.975 14.975 0 01-14.226-10.258L35.813 90zM301 240v30h-90v-30zm181 165c0 8.27-6.73 15-15 15H45c-8.27 0-15-6.73-15-15V167.434l23.934 71.796A44.935 44.935 0 0096.62 270H181v15c0 8.285 6.715 15 15 15h120c8.285 0 15-6.715 15-15v-15h84.379a44.935 44.935 0 0042.687-30.77L482 167.434zm0 0"
+                    ></path>
+                  </svg>
+                </span>
+                Placements
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <div
+                    class="
+                      jsx-2872610573 jsx-3951915900
+                      body-row
+                      bg-white
+                      px-3
+                      py-2
+                    "
+                  >
+                    <span
+                      class="
+                        jsx-2872610573 jsx-3951915900
+                        pack
+                        common_title
+                        d-block
+                      "
+                      ><span class="jsx-2872610573 jsx-3951915900 icon"
+                        ><svg
+                          width="12"
+                          height="15"
+                          viewBox="0 0 13 21"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M7.43 10.477v7.213l3.92-3.92c.306-.309.78-.309 1.058 0 .309.277.309.752 0 1.058l-5.175 5.175a.727.727 0 01-.548.196.73.73 0 01-.55-.196L.962 14.828c-.308-.306-.308-.78 0-1.058.277-.309.751-.309 1.058 0l3.92 3.92V3.263l-3.92 3.92c-.306.309-.78.309-1.058 0-.308-.276-.308-.752 0-1.058L6.136.95a.727.727 0 01.549-.196.73.73 0 01.548.196l5.175 5.175c.309.306.309.78 0 1.059-.277.308-.751.308-1.058 0l-3.92-3.92v7.213z"
+                            stroke="transparent"
+                          ></path>
+                        </svg>
+                      </span>
+                      Highest Package</span
+                    ><span
+                      class="
+                        jsx-2872610573 jsx-3951915900
+                        value
+                        font-weight-bold
+                        text-uppercase text-lg text-success
+                        d-flex
+                        align-items-center
+                      "
+                      ><span class="jsx-2872610573 jsx-3951915900 icon"
+                        ><svg
+                          width="15"
+                          height="17"
+                          viewBox="0 0 4 6"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M.532 1.356l-.14.434h1.771a.75.75 0 01-.294.448c-.224.154-.56.238-1.001.238H.441v.511c.168 0 .322.049.462.14.119.084.238.203.357.364L2.513 5.15h1.036L2.051 3.253a3.533 3.533 0 00-.329-.378c.371-.077.672-.224.896-.448.168-.175.266-.385.308-.637h.749l.147-.434H2.94a1.462 1.462 0 00-.308-.77h1.043l.14-.434H.525L.378.586h.728c.35 0 .616.077.798.238a.833.833 0 01.273.532H.532z"
+                            fill-rule="evenodd"
+                          ></path>
+                        </svg>
+                      </span>
+                      1,750,000</span
+                    >
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div
+                    class="
+                      jsx-2872610573 jsx-3951915900
+                      body-row
+                      bg-white
+                      px-3
+                      py-2
+                    "
+                  >
+                    <span
+                      class="
+                        jsx-2872610573 jsx-3951915900
+                        pack
+                        common_title
+                        d-block
+                      "
+                      ><span class="jsx-2872610573 jsx-3951915900 icon"
+                        ><svg
+                          width="12"
+                          height="15"
+                          viewBox="0 0 13 21"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M7.43 10.477v7.213l3.92-3.92c.306-.309.78-.309 1.058 0 .309.277.309.752 0 1.058l-5.175 5.175a.727.727 0 01-.548.196.73.73 0 01-.55-.196L.962 14.828c-.308-.306-.308-.78 0-1.058.277-.309.751-.309 1.058 0l3.92 3.92V3.263l-3.92 3.92c-.306.309-.78.309-1.058 0-.308-.276-.308-.752 0-1.058L6.136.95a.727.727 0 01.549-.196.73.73 0 01.548.196l5.175 5.175c.309.306.309.78 0 1.059-.277.308-.751.308-1.058 0l-3.92-3.92v7.213z"
+                            stroke="transparent"
+                          ></path>
+                        </svg>
+                      </span>
+                      Average Package</span
+                    ><span
+                      class="
+                        jsx-2872610573 jsx-3951915900
+                        value
+                        font-weight-bold
+                        text-uppercase text-lg text-success
+                        d-flex
+                        align-items-center
+                      "
+                      ><span class="jsx-2872610573 jsx-3951915900 icon"
+                        ><svg
+                          width="15"
+                          height="17"
+                          viewBox="0 0 4 6"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M.532 1.356l-.14.434h1.771a.75.75 0 01-.294.448c-.224.154-.56.238-1.001.238H.441v.511c.168 0 .322.049.462.14.119.084.238.203.357.364L2.513 5.15h1.036L2.051 3.253a3.533 3.533 0 00-.329-.378c.371-.077.672-.224.896-.448.168-.175.266-.385.308-.637h.749l.147-.434H2.94a1.462 1.462 0 00-.308-.77h1.043l.14-.434H.525L.378.586h.728c.35 0 .616.077.798.238a.833.833 0 01.273.532H.532z"
+                            fill-rule="evenodd"
+                          ></path>
+                        </svg>
+                      </span>
+                      1,240,000</span
+                    >
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div>
+                    <img
+                      src="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/163766990/original/83ea85715b754146a168b0382793fa7db504115d/mock-coding-interview-for-faang-companies.png"
+                      alt="faang companies"
+                      class="mw-100"
+                    />
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer-->
+    <footer class="py-3 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; CollegeGuide 2021</p>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+  </body>
+</html>
+
+<!-- https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/163766990/original/83ea85715b754146a168b0382793fa7db504115d/mock-coding-interview-for-faang-companies.png -->
+<!-- https://akm-img-a-in.tosshub.com/indiatoday/images/story/202106/FAANG_companies_1200x768.jpeg?DHSjuWOcDi_NIVpI0O3Rb5w7RHZMw.W_&size=770:433 -->
