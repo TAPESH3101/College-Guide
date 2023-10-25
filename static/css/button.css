@@ -5,7 +5,7 @@ button {
 .custom-btn {
   width: 130px;
   height: 40px;
-  color: #fff;
+  color: #f8ecec;
   border-radius: 5px;
   padding: 10px 25px;
   font-family: "Lato", sans-serif;
@@ -21,7 +21,7 @@ button {
 }
 
 .btn-3 {
-  background: rgb(0, 172, 238);
+  background: rgb(2, 163, 226);
   background: linear-gradient(
     0deg,
     rgba(0, 172, 238, 1) 0%,
